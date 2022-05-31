@@ -28,12 +28,12 @@ mkdir -p github.com/eliotkh12 gitlab.com/eliotkh12
 cd $GITLAB_REPOS/eliotkh12
 git clone git@gitlab.com:eliotkh12/mypubliczettelkasten.git
 git clone git@gitlab.com:eliotkh12/myprivatezettelkasten.git
-git clone git@gitlab.com:eliotkh12/mbsetool.git
-git clone git@gitlab.com:eliotkh12/freecad-source.git
+git clone git@gitlab.com:eliotkh12/freecad-project.git
 git clone git@gitlab.com:eliotkh12/leetcode.git
 git clone git@gitlab.com:eliotkh12/gravity-game.git
 git clone git@gitlab.com:eliotkh12/javaprojects.git
 git clone git@gitlab.com:eliotkh12/dotfiles.git
+git clone git@gitlab.com:eliotkh12/bash-scripts.git
 
 # Build FreeCAD
 sh buildFreeCAD.sh
