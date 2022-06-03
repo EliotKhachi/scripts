@@ -1,7 +1,7 @@
 #!/bin/bash
 (( BASH_VERSINFO[0] < 4 )) && echo "Bash 4+ required." && exit 1
 # Build FreeCAD docker container
-cd $REPOS/github.com/eliotkh12/FreeCAD
+cd $FreeCAD
 git switch mybranch
 cd project-source/tools/build/Arch
 touch xauth_list
