@@ -1,5 +1,5 @@
 #!/bin/bash
-(( BASH_VERSINFO[0] < 4 )) && echo "Bash 4+ required." && exit 1
+#(( BASH_VERSINFO[0] < 4 )) && echo "Bash 4+ required." && exit 1
 # Build FreeCAD docker container
 cd $FreeCAD
 git switch mybranch
