@@ -6,6 +6,7 @@ sudo apt-get upgrade -y
 sudo add-apt-repository universe
 sudo apt-get install vim -y
 sudo apt install hardinfo -y
+sudo apt install nginx -y
 # Snap Installs
 sudo snap install discord
 sudo snap install spotify
