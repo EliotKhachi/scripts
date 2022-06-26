@@ -7,11 +7,12 @@ sudo add-apt-repository universe
 sudo apt-get install vim -y
 sudo apt install hardinfo -y
 sudo apt install nginx -y
+sudo apt-get install curl
 # Snap Installs
 sudo snap install discord
 sudo snap install spotify
 sudo snap install intellij-idea-community --classic
-
+sudo snap install code --classic
 ## Install docker and grant permissions
 sudo snap install docker -y
 
