@@ -32,6 +32,6 @@ git clone git@github.com:EliotKhachi/gravity-game.git
 git clone git@gitlab.com:michaelarn0ld/java-web-course.git
 git clone git@gitlab.com:michaelarn0ld/java-commander.git
 # Build FreeCAD
-cd $REPOS/bash-scripts/buildFreeCAD
-#sh ./* # build all freecad dockers
-sh Ubuntu-0.20.sh
+# cd $REPOS/bash-scripts/buildFreeCAD
+# sh ./* # build all freecad dockers
+# sh Ubuntu-0.20.sh
