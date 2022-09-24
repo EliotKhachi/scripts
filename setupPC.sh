@@ -22,6 +22,20 @@ sudo chown root:docker /var/run.docker.sock
 sudo chown -R root:docker /var/run/docker
 sudo apt-get install docker-compose -y
 
+## Make directory tree for repos
+cd /home
+mkdir -p Public/repos/{gitlab.com,github.com}/eliotkh12  
+
+## Set-up .bashrc and .vimrc
+git clone git@github.com:EliotKhachi/dotfiles.git
+rm .bashrc && ln -s dotfiles/bash_config/.bashrc .bashrc
+source .bashrc
+ln -s dotfiles/vim_config/.vimrc .vimrc
+rm -rf .vim && ln -s dotfiles/vim_config/.vim .vim
+rm .viminfo && ln -s dotfiles/vim_config/.viminfo .viminfo
+source .vimrc
+## Need to install vim plug-ins automatically
+
 # Download All Repositories
 cd $REPOS 
 git clone git@github.com:EliotKhachi/publicZk.git
@@ -31,6 +45,7 @@ git clone git@github.com:EliotKhachi/privateZk.git
 git clone git@github.com:EliotKhachi/gravity-game.git
 git clone git@gitlab.com:michaelarn0ld/java-web-course.git
 git clone git@gitlab.com:michaelarn0ld/java-commander.git
+git clone git@github.com:EliotKhachi/zet.git
 # Build FreeCAD
 # cd $REPOS/bash-scripts/buildFreeCAD
 # sh ./* # build all freecad dockers
