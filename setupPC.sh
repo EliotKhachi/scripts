@@ -8,6 +8,7 @@ sudo apt-get install vim -y
 sudo apt install hardinfo -y
 sudo apt install nginx -y
 sudo apt-get install curl
+sudo apt install openssh-server openssh-client -y
 # Snap Installs
 sudo snap install discord
 sudo snap install spotify
@@ -23,18 +24,18 @@ sudo chown -R root:docker /var/run/docker
 sudo apt-get install docker-compose -y
 
 ## Make directory tree for repos
-cd /home
+cd /home/$USER
 mkdir -p Public/repos/{gitlab.com,github.com}/eliotkh12  
 
 ## Set-up .bashrc and .vimrc
 git clone git@github.com:EliotKhachi/dotfiles.git
-rm .bashrc && ln -s dotfiles/bash_config/.bashrc .bashrc
+ln -sf dotfiles/bash_config/.bashrc .bashrc
 source .bashrc
-ln -s dotfiles/vim_config/.vimrc .vimrc
+
+
+ln -sf dotfiles/vim_config/.vimrc .vimrc
 rm -rf .vim && ln -s dotfiles/vim_config/.vim .vim
-rm .viminfo && ln -s dotfiles/vim_config/.viminfo .viminfo
-source .vimrc
-## Need to install vim plug-ins automatically
+## Still need to add installation of vim plug-in manager and plug-ins 
 
 # Download All Repositories
 cd $REPOS 
@@ -46,6 +47,8 @@ git clone git@github.com:EliotKhachi/gravity-game.git
 git clone git@gitlab.com:michaelarn0ld/java-web-course.git
 git clone git@gitlab.com:michaelarn0ld/java-commander.git
 git clone git@github.com:EliotKhachi/zet.git
+git clone git@github.com:EliotKhachi/eliotkhachi.com.git
+git clone git@github.com:EliotKhachi/LaunchVehicleDesign.git
 # Build FreeCAD
 # cd $REPOS/bash-scripts/buildFreeCAD
 # sh ./* # build all freecad dockers
