@@ -2,14 +2,18 @@
 ## Install packages, drivers, and generate SSH
 sudo apt-get update -y
 sudo apt-get upgrade -y
-#sudo apt-get install ubuntu-drivers
-sudo add-apt-repository universe
+# sudo apt-get install ubuntu-drivers
+sudo apt-get install virtualbox virtualbox-ext-pack -y
+sudo add-apt-repository universe -y
 sudo apt-get install vim -y
 sudo apt install hardinfo -y
 sudo apt install nginx -y
 sudo apt-get install curl
 sudo apt install openssh-server openssh-client -y
 # Snap Installs
+sudo apt-get install curl -y
+sudp apt-get install nmap -y
+## Snap Installs
 sudo snap install discord
 sudo snap install spotify
 sudo snap install intellij-idea-community --classic
