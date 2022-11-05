@@ -1,4 +1,4 @@
-# bash-scripts
+#bash-scripts
 
 This project is used to store and maintain all of my bash scripts. Some of them are extremely customized and others may be useful in general applications.
 
@@ -12,5 +12,5 @@ The script is used to take notes on your computer using the zettelkasten method,
 ## setupPC
 This script is a customized script I use to boot-up my computer back to its original settings and packages in case of a system wipe.
 
-## buildFreeCAD
-This script builds the FreeCAD project I'm currently working on. It creates a docker image with all the necessary dependencies and forwards the x socket of my computer into it to enable the GUI.
+## toemoji
+
