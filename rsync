@@ -1,7 +1,0 @@
-#!/bin/bash
-
-# add new files in home directory from remote to local (excluding dotfiles)
-rsync -azPv --update --exclude=.* eliot@192.168.1.20:/home/eliot/ /home/eliot/
-
-# add new files in home directory from local to remote (excluding dotfiles)
-rsync -azPv --update --exclude=.* /home/eliot/ eliot@192.168.1.20:/home/eliot/
