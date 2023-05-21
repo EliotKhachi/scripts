@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# get screenshot and store it
+image_loc="/home/eliot/Pictures/Screenshots/rMScreenshots/$(date | sed 's/ /_/g').png"
+reSnap -s $REMARKABLE_IP -n -o $image_loc > /dev/null 2>&1 
+# create a symlink in the obsidian vault sketches folder
+ln -s $image_loc "$OBSIDIAN/Sketches/$(basename $image_loc)" 
+# echo $image_loc
