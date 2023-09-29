@@ -1,0 +1,13 @@
+#!/bin/bash
+echo "Copying contents from $REPOS/eliotkhachi.dev to s3://amazon-cloudfront-s3-secure-site-cus-s3bucketroot-1jdibk2916043..."
+aws s3 cp $REPOS/eliotkhachi.dev s3://amazon-cloudfront-s3-secure-site-cus-s3bucketroot-1jdibk2916043/ --recursive \
+    --exclude ".history/"*\
+    --exclude ".vscode/*"\
+    --exclude ".git/*"\
+    --exclude ".gitignore"\
+    --exclude "*.png"\
+    --exclude "*.pdf"
+aws cloudfront create-invalidation --distribution-id E2BYCO7WLM347W \
+    --paths "$REPOS/eliotkhachi.dev/*.html"\
+    --paths "$REPOS/eliotkhachi.dev/*.css"
+echo "run 'aws cloudfront get-distribution --id E2BYCO7WLM347W | grep Status' for a status on the cloudfront distribution"
