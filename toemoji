@@ -6,6 +6,7 @@ emoji[gorilla]=🦍
 emoji[flowers]=💐
 emoji[dolphin]=🐬
 emoji[joystick]=🕹
+emoji[smiley]=😃
 
 toemoji() {
   while read -r line; do
