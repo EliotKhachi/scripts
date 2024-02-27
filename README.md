@@ -2,8 +2,11 @@
 
 This project is used to store and maintain all of my bash scripts. 
 
-## setupPC
-The `setupPC` script is intended to configure my computer's settings (for Ubuntu) such as setting up environment variables, installing packages, and downloading cloud backup files. This is helpful for instances when something breaks on my PC and I need to hard reset it (tends to happen when I cowboy my sudo privileges :) ), or if I need to quickly setup an entirely new PC to my original settings. 
+## pushHome
+`pushHome.sh` pushes the local computer's home directory contents to a remote server's home directory (in this case a raspberry pi).  
+
+## pullHome
+`pullHome.sh` pulls the remote server's home directory contents into the local computer's home directory.  
 
 ## toemoji
 A fun script for adding a repository of emojis to write in text files.  
