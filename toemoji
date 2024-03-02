@@ -8,6 +8,10 @@ emoji[flowers]=💐
 emoji[dolphin]=🐬
 emoji[joystick]=🕹
 emoji[smiley]=😃
+emoji[laugh]=😂
+emoji[wink]=😉
+emoji[heart]=❤️
+emoji[heartbroken]=💔
 
 toemoji() {
   while read -r line; do
