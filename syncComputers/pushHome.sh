@@ -14,6 +14,6 @@ sudo rsync -avxz -e "ssh -i /home/$USER/.ssh/rpi" --log-file=$repo/push.log --pa
     /home/$USER/ $PI_USERNAME@$PI_ADDRESS:$DISK_MOUNT_PATH/home/$USER/
 
 ## Update git repository
-git -C $repo add snap.txt apt.txt exclude.txt repos.txt push.log 
-git -C $repo commit -m "Synced on $(date)"
+git -C $repo/syncComputers add .
+git -C $repo commit -m "Computers synced on $(date)"
 git -C $repo push

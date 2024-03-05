@@ -1,9 +1,10 @@
 #!/bin/bash
 DISK_MOUNT_PATH="/mnt/backup"
 DISK_DEVICE="/dev/sda"
+repo="/home/$USER/Public/repos/scripts/"
 
-Get latest version of scripts (update snap.txt, exclude.txt, and apt.txt)
-git -C /home/$USER/Public/repos/scripts pull origin
+# Get latest version of scripts (update snap.txt, exclude.txt, and apt.txt)
+git -C $repo pull origin
 
 # Sync directories to backup server. Exclude directories that are not needed.
  sudo rsync -avxz -e "ssh -i /home/$USER/.ssh/rpi" --exclude-from=exclude.txt \

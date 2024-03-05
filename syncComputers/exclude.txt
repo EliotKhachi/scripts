@@ -1,3 +1,4 @@
+.wine
 .bash_history
 .gradle
 .jdks
