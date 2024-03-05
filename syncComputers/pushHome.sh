@@ -16,3 +16,4 @@ sudo rsync -avxz -e "ssh -i /home/$USER/.ssh/rpi" --log-file=$repo/push.log --pa
 ## Update git repository
 git -C $repo add snap.txt apt.txt exclude.txt repos.txt push.log 
 git -C $repo commit -m "Synced on $(date)"
+git -C $repo push
