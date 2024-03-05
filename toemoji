@@ -12,6 +12,7 @@ emoji[laugh]=😂
 emoji[wink]=😉
 emoji[heart]=❤️
 emoji[heartbroken]=💔
+emoji[facepalm]=🤦
 
 toemoji() {
   while read -r line; do
